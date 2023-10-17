@@ -1,0 +1,152 @@
+{
+  "routes": [
+    {
+      "route": "/api/v1/verify",
+      "method": "POST",
+      "controller": "../components/user/controller/UserController.js",
+      "secured": false,
+      "action": "verify"
+    },
+    {
+      "route": "/api/v1/login",
+      "method": "POST",
+      "controller": "../components/user/controller/UserController.js",
+      "secured": false,
+      "action": "login"
+    },
+    {
+      "route": "/api/v1/logout",
+      "method": "POST",
+      "controller": "../components/user/controller/UserController.js",
+      "secured": false,
+      "action": "logout"
+    },
+    {
+      "route": "/api/v1/user",
+      "method": "POST",
+      "controller": "../components/user/controller/UserController.js",
+      "secured": true,
+      "isAdminRoute": true,
+      "action": "createUser"
+    },
+    {
+      "route": "/api/v1/user",
+      "method": "GET",
+      "controller": "../components/user/controller/UserController.js",
+      "secured": true,
+      "isAdminRoute": true,
+      "action": "getAllUsers"
+    },
+    {
+      "route": "/api/v1/user/:userId",
+      "method": "GET",
+      "controller": "../components/user/controller/UserController.js",
+      "secured": true,
+      "isAdminRoute": true,
+      "action": "getUserById"
+    },
+    {
+      "route": "/api/v1/user/:userId",
+      "method": "PUT",
+      "controller": "../components/user/controller/UserController.js",
+      "secured": true,
+      "isAdminRoute": true,
+      "action": "updateUser"
+    },
+    {
+      "route": "/api/v1/user/:userId",
+      "method": "DELETE",
+      "controller": "../components/user/controller/UserController.js",
+      "secured": true,
+      "isAdminRoute": true,
+      "action": "deleteUser"
+    },
+    {
+      "route": "/api/v1/user/:userId/contact",
+      "method": "POST",
+      "controller": "../components/contact/controller/ContactController.js",
+      "secured": true,
+      "isAdminRoute": false,
+      "action": "createContact"
+    },
+    {
+      "route": "/api/v1/user/:userId/contact",
+      "method": "GET",
+      "controller": "../components/contact/controller/ContactController.js",
+      "secured": true,
+      "isAdminRoute": false,
+      "action": "getAllContacts"
+    },
+    {
+      "route": "/api/v1/user/:userId/contact/:contactId",
+      "method": "GET",
+      "controller": "../components/contact/controller/ContactController.js",
+      "secured": true,
+      "isAdminRoute": false,
+      "action": "getContactById"
+    },
+    {
+      "route": "/api/v1/user/:userId/contact/:contactId",
+      "method": "PUT",
+      "controller": "../components/contact/controller/ContactController.js",
+      "secured": true,
+      "isAdminRoute": false,
+      "action": "updateContact"
+    },
+    {
+      "route": "/api/v1/user/:userId/contact/:contactId",
+      "method": "DELETE",
+      "controller": "../components/contact/controller/ContactController.js",
+      "secured": true,
+      "isAdminRoute": false,
+      "action": "deleteContact"
+    },
+    {
+      "route": "/api/v1/user/:userId/contact/:contactId/contactdetail",
+      "method": "POST",
+      "controller": "../components/contactdetail/controller/ContactdetailController.js",
+      "secured": true,
+      "isAdminRoute": false,
+      "action": "createContactdetail"
+    },
+    {
+      "route": "/api/v1/user/:userId/contact/:contactId/contactdetail",
+      "method": "GET",
+      "controller": "../components/contactdetail/controller/ContactdetailController.js",
+      "secured": true,
+      "isAdminRoute": false,
+      "action": "getAllContactdetails"
+    },
+    {
+      "route": "/api/v1/user/:userId/contact/:contactId/contactdetail/:contactdetailId",
+      "method": "GET",
+      "controller": "../components/contactdetail/controller/ContactdetailController.js",
+      "secured": true,
+      "isAdminRoute": false,
+      "action": "getContactdetailById"
+    },
+    {
+      "route": "/api/v1/user/:userId/contact/:contactId/contactdetail/:contactdetailId",
+      "method": "PUT",
+      "controller": "../components/contactdetail/controller/ContactdetailController.js",
+      "secured": true,
+      "isAdminRoute": false,
+      "action": "updateContactdetail"
+    },
+    {
+      "route": "/api/v1/user/:userId/contact/:contactId/contactdetail/:contactdetailId",
+      "method": "DELETE",
+      "controller": "../components/contactdetail/controller/ContactdetailController.js",
+      "secured": true,
+      "isAdminRoute": false,
+      "action": "deleteContactdetail"
+    },
+    {
+      "route": "/api/v1/resetpassword",
+      "method": "PUT",
+      "controller": "../components/user/controller/UserController.js",
+      "secured": false,
+      "action": "resetPassword"
+    }
+  ]
+}
